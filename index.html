@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Twitter &hearts; Open Source</title>
+    <title>Scenedipity &hearts; Open Source</title>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -13,9 +13,9 @@
 
       // Put custom repo URL's in this object, keyed by repo name.
       var repoUrls = {
-        "bootstrap": "http://twitter.github.com/bootstrap/",
-        "finagle": "http://twitter.github.com/finagle/",
-        "hogan.js": "http://twitter.github.com/hogan.js/"
+        "bootstrap": "http://scenedipity.github.com/bootstrap/",
+        "finagle": "http://scenedipity.github.com/finagle/",
+        "hogan.js": "http://scenedipity.github.com/hogan.js/"
       };
 
       function repoUrl(repo) {
@@ -63,7 +63,7 @@
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/orgs/twitter/repos?callback=?", function (result) {
+      $.getJSON("https://api.github.com/orgs/scenedipity/repos?callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
